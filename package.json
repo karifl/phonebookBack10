@@ -1,0 +1,31 @@
+{
+  "name": "phonebookback10",
+  "version": "1.0.0",
+  "description": "phonebook step 10 for backend",
+  "main": "index.js",
+  "scripts": {
+    "build:ui": "rm -rf build && cd ../build && npm run build && cp -r build", 
+    "deploy:full": "npm run build:ui && git add . && git commit -, uibuild && git push",
+    "dev": "nodemon index.js",
+    "start": "node index.js",
+    "test": "echo hello backend10"
+  },
+  "repository": {
+    "type": "git",
+    "url": ".\\"
+  },
+  "keywords": [
+    "phonebook",
+    "backend"
+  ],
+  "proxy": "http://localhost:3001",
+  "author": "Kari Lampi",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "morgan": "^1.10.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.21"
+  }
+}
