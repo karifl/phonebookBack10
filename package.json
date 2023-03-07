@@ -4,7 +4,7 @@
   "description": "phonebook step 10 for backend",
   "main": "index.js",
   "scripts": {
-    "build:ui": "rm -rf build && cd ../build && npm run build && cp -r build", 
+    "build:ui": "rm -rf build && cd ../build && npm run build && cp -r build",
     "deploy:full": "npm run build:ui && git add . && git commit -, uibuild && git push",
     "dev": "nodemon index.js",
     "start": "node index.js",
