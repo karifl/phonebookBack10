@@ -96,7 +96,7 @@ app.get(testURL, (request, response) => {
     response.json(person)
 })
 
-app.get('/info', (request, response) => {
+app.get(testURL +'/info', (request, response) => {
     let time = Date()
     response.send('<h2> Phonebook has info for ' + persons.length + ' people. <br/><br/> ' + Date() + '</h2>' )
     console.log("Phonebook's info and time ", Date())
@@ -145,7 +145,7 @@ const generateMax = () => {
     return max
 }
 
-app.post('/api/persons', (request, response) => {
+app.post( testURL +'/api/persons', (request, response) => {
   //  console.log("request headers: ", request.headers)
   //  console.log("request body: ",request.body)
     const body = request.body
