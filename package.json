@@ -18,7 +18,7 @@
     "phonebook",
     "backend"
   ],
-  "proxy": "http://localhost:3001",
+  "proxy": "https://phonebook-qigd.onrender.com/",
   "author": "Kari Lampi",
   "license": "ISC",
   "dependencies": {
